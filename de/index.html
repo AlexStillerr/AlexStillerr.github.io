@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Stiller - Portfolio</title>
+  <link rel="alternate" hreflang="de" href="/de/index.html">
+  <link rel="alternate" hreflang="en" href="/en/index.html">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+
+<!-- Image Zoom -->
+<div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+document.addEventListener("click", e => {
+    if (e.target.hasAttribute("data-nozoom")) return;
+
+    if (e.target.tagName === "IMG" && !e.target.closest("#lightbox")) {
+        lightboxImg.src = e.target.src;
+        lightbox.style.display = "flex";
+    }
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+<!-- Image Zoom  ende-->
+
+<body>
+  <nav>
+    <a href="../en/index.html">🇬🇧 English</a>
+  </nav>
+  <header>
+    <div class="headeroverlay"></div>
+    <div class="headercontent">
+      <h1>Alexander Stiller</h1>
+      <p>Spiele- & Anwendungsentwickler | C#, Unity, C++, AI</p>
+    </div>
+  </header>
+
+  <!-- Über mich -->
+  <section id="about">
+    <h2>Über mich</h2>
+    <p>
+      Ich entwickle Spiele und Anwendungen mit Fokus auf Architektur, Clean Code und Performance.<br>  
+      Besonders interessiert mich Künstliche Inteligenz, prozedurale Systeme, Tools und benutzerfreundliche Anwendungen.<br>
+      Mir ist es besonders wichtig mit meinem Team konstruktiv und ergebnisorientiert an gemeinsamen Projekten zu arbeiten.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">C#</div>
+      <div class="skill">Unity</div>
+      <div class="skill">.NET</div>
+      <div class="skill">C++</div>
+      <div class="skill">Python</div>
+      <div class="skill">AI für Games</div>
+      <div class="skill">Automated-Test</div>
+      <div class="skill">Game Logic</div>
+      <div class="skill">ScrumMaster</div>
+    </div>
+  </section>
+  
+  <section id="skills">
+    <h2>Weitere Skills</h2>
+    <div class="skills">
+      <div class="subskill">Git / GitHub</div>
+      <div class="subskill">Machine Learning</div>
+      <div class="subskill">WPF / Windows Form</div>
+      <div class="subskill">Unity UI Builder</div>
+      <div class="subskill">UI/UX Design</div>
+      <div class="subskill">JavaScript</div>
+      <div class="subskill">GameSparks</div>
+      <div class="subskill">SQL / NoSQL</div>
+      <div class="subskill">Netzwerk</div>
+      <div class="subskill">Unreal Engine</div>
+      <div class="subskill">Nintendo Switch</div>
+      <div class="subskill">Nintendo DS</div>
+      <div class="subskill">Goggle tests</div>
+      <div class="subskill">Cocos2dx</div>
+      <div class="subskill">Java</div>
+      <div class="subskill">Jira</div>
+      <div class="subskill">Redmine</div>
+      <div class="subskill">Asprite</div>
+      <div class="subskill">Photoshop</div>
+    </div>
+  </section>
+
+  <!-- Projekte -->
+  <section id="projects">
+    <h2>Projekte</h2>
+    
+    <h3>🎮 Spieleentwicklung</h3>
+    <div class="projects">
+      <div class="project">
+        <img src="../assets/img/converted/CU1.png" alt="Screenshot">
+        <h3>Catan Universe (Release 2017)</h3>
+        <p><b>Team:</b> 4-7 Programmierer</p>
+        <p><b>Aufgaben:</b> Die GameLogic zu schreiben und die Catan-Regel mit Erweiterungen implementieren. 
+          Die KI fürs Kartenspiel erstellt, KI für Catan erweitert, 
+          Multiplayer mit Hilfe von GameSparks aufgebaut, Ingame Ui, Unittests aufgebaut.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">AI</div>
+            <div class="skill">Ui</div>
+            <div class="skill">ScrumMaster</div>
+        </div>
+        <br>
+        <p><a href="https://catanuniverse.com/" target="_blank" rel="noopener noreferrer">Webseite</a></p>
+      </div>
+
+      <div class="project">
+        <img src="../assets/img/converted/Dofus.png" alt="Dofus">
+        <h3>Dofus (Release 2022)</h3>
+        <p><b>Team:</b> ca 20 Programmierer</p>
+        <p><b>Beschreibung:</b> Ein 2D mmorgp was von Flash zu Unity portiert wurde</p>
+        <p><b>Aufgaben:</b> Die konvertierung/neu schreiben vom Tutorial, Hinweis/Item Ui Systems und Player Profil.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">UI Builder</div>
+        </div>
+        <br>
+        <p><a href="https://www.dofus.com/en/mmorpg/discover" target="_blank" rel="noopener noreferrer">Link zum Spiel</a></p>
+      </div>
+
+      <div class="project">
+        <img src="../assets/img/converted/BloodRage.png" alt="BloodRage">
+        <h3>Blood Rage (Release 2020)</h3>
+        <p><b>Team:</b> 3 Programmierer</p>
+        <p><b>Beschreibung:</b> Das Brettspiel Blood Rage </p>
+        <p><b>Aufgaben:</b> Die AI designen und unterschiedliche Rollen implementieren. Karten/Spiel Logic eingebauen und das Tutorial.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">AI</div>
+            <div class="skill">Unittests</div>
+            <div class="skill">UI</div>
+        </div>
+        <br>
+        <p><a href="https://store.steampowered.com/app/1015930/Blood_Rage_Digital_Edition/" target="_blank" rel="noopener noreferrer">Steam</a></p>
+      </div>
+
+      
+    </div>
+
+    <br><br>
+    <h3>💻 Anwendungen & Tools</h3>
+    <div class="projects">
+      <div class="project">
+        <img src="../assets/img/converted/finance.png" alt="FinanzTool">
+        <h3>Finanzen App</h3>
+        <p><b>Beschreibung:</b> Ein Tool was die Ausgaben eines Monats erfassen kann und in Kategorien speichert.</p>
+        <p><b>Aufgaben:</b> Verknüpfung von einem Google Sheet, in meinem Drive, und einer Android app. Stabile Kommunication zwischen App und Sheet.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">UI Builder</div>
+            <div class="skill">Google Sheet</div>
+            <div class="skill">Pixelart</div>
+        </div>
+        <br>
+        <!-- <p><a href="#">GitHub Repo</a></p> -->
+      </div>
+      <div class="project">
+        <img src="../assets/img/converted/MatchFour.png" alt="MatchFour">
+        <h3>Vier Gewinnt AI</h3>
+        <p><b>Beschreibung:</b> Eine selbstlernende AI für Vier Gewinnt.</p>
+        <p><b>Aufgaben:</b> C# Umgebung sendet Daten über ein HttpClient an Python Server. Python nutzt Reinforcement Learning um die Daten zu verarbeiten. Python sendet eine Action an C# zurück.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">WPF</div>
+            <div class="skill">HttpClient</div>
+            <div class="skill">Python</div>
+            <div class="skill">AI ML</div>
+        </div>
+        <br>
+        <p><a href="https://github.com/AlexStillerr/CSharp/tree/main/MatchFour" target="_blank" rel="noopener noreferrer">GitHub Repo C#</a></p>
+        <p><a href="https://github.com/AlexStillerr/PythonSteps/tree/main/ReinforcementLearning" target="_blank" rel="noopener noreferrer">GitHub Repo Python</a></p>
+      </div>
+      <div class="project">
+        <img src="../assets/img/converted/LernQuiz.png" alt="LernQuiz">
+        <h3>Lern Quiz</h3>
+        <p><b>Beschreibung:</b> Ein Quiz zum lernen vom Programmier Themen. Die Fragen wurden von ChatGPT erstellt.</p>
+        <p><b>Aufgaben:</b> Den Umgang mit Windows Form lernen.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Windows Form</div>
+        </div>
+        <br>
+        <p><a href="https://github.com/AlexStillerr/CSharp/tree/main/Quiz" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+      </div>
+      <div class="project">
+        <!-- <img src="../assets/img/LernQuiz.jpg" alt="LernQuiz"> -->
+        <h3>Message System</h3>
+        <p><b>Beschreibung:</b> Eine System was es erlaubt Events im Unity Context zu senden und zu empfangen.</p>
+        <p><b>Aufgaben:</b> Anmelden/Abmelden an Events(Klassen) mit und ohne dependency injection an ein MessageBus.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+        </div>
+        <br>
+        <p><a href="https://github.com/AlexStillerr/Alex-Game-Logic/tree/main/MessageSystem" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+      </div>
+    </div>
+    <br>
+    <h3>📜 Projekt Historie</h3>
+    <div class="projects">
+    <div class="project">
+        <a href="Projects.html"><img src="../assets/img/converted/Projekte.png" data-nozoom alt="Projects"></a>
+        <h3>Weitere Projekte</h3>
+        <p>Projekte an denen ich beteiligt war in chnonologischer Reihenfolge</p>
+        <p><a href="Projects.html">Hier gehts weiter</a></p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/AlexStillerr" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/img/converted/Git.png" alt="Git" data-nozoom>
+        </a>
+        <h3>Code Beispiele</h3>
+        <p>Hier findet man meine Repositories mit meinem Code.</p>
+        <p><a href="https://github.com/AlexStillerr" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+      </div>
+      <div class="project">
+        <h3>Eigene Spiele</h3>
+        <p>Auf der Seite Itch.io habe ich ein paar meiner Spiele hochgeladen. Sie stammen von Game Jams oder aus neugier an einer Game mechanik.</p>
+        <p><a href="https://squirrelcoder.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a></p>
+      </div>
+      </div>
+  </section>
+
+  <section id="about">
+    <h2>Offtopic über mich</h2>
+    <p>
+      Ich nehme gern an Game Jams und am "Codinggame - Botprogrammierung" teil. 
+      Neben dem Programmieren bringe ich mir Pixelart bei, damit ich in meinen Spielen meine Ideen besser umsetzen kann.<br>
+      In meiner Freizeit spiele ich gerne Brettspiele, analog oder auch digital. <br>
+      Vor vielen Jahren habe ich Zeltlager für Kinder/Jungendliche geleitet und gestaltet, was ich aber aus Zeitgründen abgeben musste.
+    </p>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/alexander-stiller-9787885/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.xing.com/profile/Alex_Stiller3/" target="_blank" rel="noopener noreferrer">Xing</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Alexander Stiller
+  </footer>
+
+</body>
+</html>

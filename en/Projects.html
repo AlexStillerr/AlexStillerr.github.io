@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Stiller - Portfolio</title>
+  <link rel="alternate" hreflang="de" href="/de/index.html">
+  <link rel="alternate" hreflang="en" href="/en/index.html">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<!-- Image Zoom -->
+<div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+document.addEventListener("click", e => {
+    if (e.target.tagName === "IMG" && !e.target.closest("#lightbox")) {
+        lightboxImg.src = e.target.src;
+        lightbox.style.display = "flex";
+    }
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+<!-- Image Zoom  ende-->
+
+<body>
+  <nav>
+    <a href="../de/Projects.html">🇩🇪 Deutsch</a>
+  </nav>
+  <header>
+    <div class="headeroverlay"></div>
+    <div class="headercontent">
+      <h1>Alexander Stiller</h1>
+      <p>Games & Application Developer | C#, Unity, C++, AI</p>
+    </div>
+  </header>
+
+  <div class="back">
+    <a href="index.html">Back</a>
+  </div>
+  <h1>Under Construction</h1>
+  <section id="projects">
+    <h2>Projekte</h2>
+    <h3>🛠️ Own Projects</h3>
+    <div class="projects">
+    </div>
+    <br>
+    <h3>💼 Professional Projects</h3>
+    <div class="projects">
+    </div>
+    <h3>🛠️ Sonstige Projekte?</h3>
+    <div class="projects">
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/alexander-stiller-9787885/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.xing.com/profile/Alex_Stiller3/" target="_blank" rel="noopener noreferrer">Xing</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Alexander Stiller
+  </footer>
+
+</body>
+</html>
+
