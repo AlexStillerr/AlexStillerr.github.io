@@ -43,19 +43,421 @@ lightbox.addEventListener("click", () => {
     </div>
   </header>
 
-  <div class="back">
-    <a href="index.html">Zurück</a>
-  </div>
+  <section id="projects">
+    <a href="index.html"><h3>Zurück</h3></a>
+    <br>
+    <a href="#teamProject"><h3>Team Projekte</h3></a>
+    <a href="#toolProject"><h3>Tools und Anwendungen</h3></a>
+    <a href="#ownProject"><h3>Eigene Spiele</h3></a>
+  </section>
 
   <section id="projects">
     <h2>Projekte</h2>
-    <h3>🛠️ Eigene Projekte</h3>
+    <h3 id="teamProject">Team Projekte</h3>
+    <div class="projects">
+
+      <!-- «Destruction Dudes» - Unity (C#), 5 Programmierer, Internes Project: KI entworfen und implementierung, Ingame UI, Game-Logic, Message System. -->
+      <div class="project">
+        <img src="../assets/img/converted/DestructionDudes.png" alt="DestructionDudes">
+        <h3>Destruction Dudes (2023)</h3>
+        <p><b>Team:</b> 5 Programmierer</p>
+        <p><b>Beschreibung:</b> Ein Bomberman Clon in 3d mit der Möglichkeit Bomben zu werfen.</p>
+        <p><b>Aufgaben:</b> Eine AI entwerfen die herrausfordernd ist (Behaviour Tree). Game Logic und Message System entwickeln (Dependency Injection).</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">AI</div>
+            <div class="skill">UI</div>
+        </div>
+      </div>
+
+      <!-- «Dofus» - Unity (C#), ca 20 Programmierer, ca Release 2022: Portierung von Flash zu Unity, Tutorial system, Ingame UI. -->
+      <div class="project">
+        <img src="../assets/img/converted/Dofus.png" alt="Dofus">
+        <h3>Dofus (Release 2022)</h3>
+        <p><b>Team:</b> ca 20 Programmierer</p>
+        <p><b>Beschreibung:</b> Ein 2D mmorgp was von Flash zu Unity portiert wurde.</p>
+        <p><b>Aufgaben:</b> Die konvertierung/neu schreiben vom Tutorial, Hinweis/Item Ui Systems und Player Profil. Sämtliches UI mit dem UI Builder umsetzen. Enge zusammenarbeit mit Entwicklern von Unity.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">UI Builder</div>
+        </div>
+        <br>
+        <p><a href="https://www.dofus.com/en/mmorpg/discover" target="_blank" rel="noopener noreferrer">Link zum Spiel</a></p>
+      </div>
+
+    <!-- «Blood Rage» - Unity (C#), 3 Programmierer, Release 2020: KI entworfen und implementierung, Unity-Tests, Tutorial system, Ingame UI, Game-Logic. -->
+    <div class="project">
+      <img src="../assets/img/converted/BloodRage.png" alt="BloodRage">
+      <h3>Blood Rage (Release 2020)</h3>
+      <p><b>Team:</b> 3 Programmierer</p>
+      <p><b>Beschreibung:</b> Die digitale Umsetzung des Brettspiels Blood Rage</p>
+      <p><b>Aufgaben:</b> Die AI designen und unterschiedliche Charaktere und Schwierigkeiten implementieren. Karten und Spiel Logic eingebauen. Das Tutorial programmieren und mit einer geskripteten AI versehen.</p>
+      <div class="skills">
+          <div class="skill">C#</div>
+          <div class="skill">Unity</div>
+          <div class="skill">AI</div>
+          <div class="skill">Unittests</div>
+          <div class="skill">UI</div>
+      </div>
+      <br>
+      <p><a href="https://store.steampowered.com/app/1015930/Blood_Rage_Digital_Edition/" target="_blank" rel="noopener noreferrer">Steam</a></p>
+    </div>
+
+    <!-- «Catan Switch» - Unity (C#, JavaScript, Nintendo Switch), 3 Programmierer, Release 2019 : Portierung von Catan Universe auf Switch, KI erweitert, Nintendo Lotcheck, Multiplayer verbessert. Lead Entwickler -->
+    <div class="project">
+      <img src="../assets/img/converted/CUSwitch.png" alt="CatanSwitch">
+      <h3>Catan Switch (Release 2019)</h3>
+      <p><b>Team:</b> 3 Programmierer</p>
+      <p><b>Beschreibung:</b> Portierung von Catan Universe auf die Nintendo Switch.</p>
+      <p><b>Aufgaben:</b> Den Multiplayer an die Nintendo Vorgaben anpassen. Das Spiel so anpassen das es von Nintendo abgenommen wird (Lotcheck).
+        Speicherverhalten umschrieben damit die Console geschont wird. Leichte AI soll noch leichter sein.</p>
+      <div class="skills">
+          <div class="skill">C#</div>
+          <div class="skill">Unity</div>
+          <div class="skill">Lead Entwickler</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">GameSparks</div>
+          <div class="skill">AI</div>
+          <div class="skill">Ui</div>
+      </div>
+      <br>
+      <p><a href="https://www.youtube.com/watch?v=0_JvJf2MZ6M" target="_blank" rel="noopener noreferrer">youtube</a></p>
+    </div>
+    
+    <!-- «Catan Universe» - Unity (C#, JavaScript), 4-7 Programmierer, Release 2017 : Catan-Regel mit Erweiterungen und Coregame-Logik implementiert,  KI fürs Kartenspiel erstellt, KI für Catan erweitert, Multiplayer mit Hilfe von GameSparks aufgebaut, Ingame Ui, Unittests aufgebaut. ScrumMaster -->
+    <div class="project">
+      <img src="../assets/img/converted/CU1.png" alt="Screenshot">
+      <h3>Catan Universe (Release 2017)</h3>
+      <p><b>Team:</b> 4-7 Programmierer</p>
+      <p><b>Beschreibung:</b> Digitale Version von Catan mit Turnieren, Gilden und Crossplatform Multiplayer.</p>
+      <p><b>Aufgaben:</b> Die GameLogic zu schreiben und die Spiel-Regel zu implementieren. 
+        Die KI fürs Kartenspiel aufbauen und die KI fürs Brettspiel erweitern.
+        Multiplayer mit GameSparks entwickeln und ein verlässliches Send/Receive verhalten implementieren.</p>
+      <div class="skills">
+          <div class="skill">C#</div>
+          <div class="skill">Unity</div>
+          <div class="skill">GameSparks</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">AI</div>
+          <div class="skill">Ui</div>
+          <div class="skill">ScrumMaster</div>
+          <div class="skill">Unittests</div>
+      </div>
+      <br>
+      <p><a href="https://catanuniverse.com/" target="_blank" rel="noopener noreferrer">Webseite</a></p>
+    </div>
+    
+    <!-- «Diamond Dash» - Android (C++), 3-6 Programmierer, Letztes Update 2015 : Entwicklung mit Cocos2dx und Anbindung von Google Analytics. Controller für Ligen, Boosts und Missionen programmiert, sowie  Teile der Menüintegration entwickelt. -->
+      <div class="project">
+        <img src="../assets/img/converted/DiamondDash.png" alt="DiamondDash">
+        <h3>Diamond Dash (Letztes Update 2015)</h3>
+        <p><b>Team:</b> 3-6 Programmierer</p>
+        <p><b>Beschreibung:</b> Match-3 Facebook Spiel von Wooga mit vielen Meta-Game features wie Liga, Freunde oder Dayli reward.</p>
+        <p><b>Aufgaben:</b> Portierung vom Facebook Spiel zur Android app mit Cocos2dx. Die Feature entwicklung von der Spieler Liga, Ingame Boosts und Missionen. Menü integration mit Cocos Builder.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Cocos2dx</div>
+            <div class="skill">Android</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=mC67st37md8" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+
+    <!-- «Jelly Splash» - Android (C++), 3-6 Programmierer, Release 2013 : Entwicklung mit Cocos2dx und Anbindung von Kakao Talk. Ingame-Programmierung von speziellen „Jellys“ und Menüintegration. -->
+        <div class="project">
+        <img src="../assets/img/converted/JellySplash.png" alt="JellySplash">
+        <h3>Jelly Splash (Release 2013)</h3>
+        <p><b>Team:</b> 3-6 Programmierer</p>
+        <p><b>Beschreibung:</b> Match-3 Facebook Spiel von Wooga bei dem man Reihen von "Jellys" verbinded um damit verschiedene Levels zu lösen. Anbindung von Kakao Talk.</p>
+        <p><b>Aufgaben:</b> Portierung vom Facebook Spiel zur Android app mit Cocos2dx, experimentelle nutzung eines Codeconverters. Programmierung der „Jellys“ mit Zusatzfunktion und Sondereffekten. Menü integration mit Cocos Builder.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Cocos2dx</div>
+            <div class="skill">Android</div>
+        </div>
+        <br>
+        <p><a href="https://apps.apple.com/us/app/jelly-splash-fun-puzzle-game/id645949180" target="_blank" rel="noopener noreferrer">Apple app store</a></p>
+      </div>
+
+    <!-- «Christiane Stengers Gedächtnis-Coach» - Nintendo DS  (C++), 1 Programmierer, Release 2013 : Eigenständige Programmierung des gesamten Spiels. -->
+        <div class="project">
+        <img src="../assets/img/converted/Stenger1.png" alt="Gedächtnis-Coach">
+        <h3>Christiane Stengers Gedächtnis-Coach (Release 2013)</h3>
+        <p><b>Team:</b> 1 Programmierer</p>
+        <p><b>Beschreibung:</b> Gedächtnis trainer der die speziellen Merktechniken von Christiane Stenger erklärt und </p>
+        <p><b>Aufgaben:</b> Jede Merktechnik mit einem eigenen Spiel erklären und den Spieler testen. Programmierung sämtlicher Logiken in Time und Budget. Komplette Menüintegration.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Nintendo DS</div>
+            <div class="skill">Lead Entwickler</div>
+            <div class="skill">BitEngine</div>
+            <div class="skill">Lotcheck</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=Or26AhbQUKI" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+
+    <!-- «HABA Obstgarten» - iOs (C++), 3 Programmierer, Release  2012 : Entwicklung mit Cocos2dx, Mechanik zum Pflanzen sowie Wachstum von Bäumen programmiert. -->
+        <div class="project">
+        <img src="../assets/img/converted/Haba.png" alt="Haba">
+        <h3>HABA Obstgarten (Release 2012)</h3>
+        <p><b>Team:</b> 3 Programmierer</p>
+        <p><b>Beschreibung:</b> Eine Digitale version vom Brettspiel Obstgarten für Kinder. Mit zusätzlichen Lerninhalten wie z.b. ein Baum wächst.</p>
+        <p><b>Aufgaben:</b> Entwicklung mit Cocos2dx und C++ für Apple. Das Minigame entwicklen was das Wachstum von Bäumen in kleinen schritten zeigt.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Cocos2dx</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=bQfZX0yhjG4" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+
+    <!-- «Carcassonne» - Windows Phone 7 (C#), 3 Programmierer, Release 2012 : KI-Implementierung, Einbindung von 3 Erweiterungen, Vorschaueditor und weitere Coregameplay-Elemente eingebaut. -->
+        <div class="project">
+        <img src="../assets/img/converted/Caracassonne.png" alt="Carcassonne">
+        <h3>Carcassonne (Release 2012)</h3>
+        <p><b>Team:</b> 3 Programmierer</p>
+        <p><b>Beschreibung:</b> Eins der ersten Spiele mit Multiplayerfunktion für das WindowsPhone. Portierung von der Android version.</p>
+        <p><b>Aufgaben:</b> KI-Implementierung nach C# übertragen und verbessern. Coregameplay-Elemente und 3 zusätzliche Brettspiel Erweiterungen implementieren. Einen Vorschaumodus für noch nicht gelegte Karten entwickeln.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">AI</div>
+            <div class="skill">XAML</div>
+            <div class="skill">Windows Phone</div>
+        </div>
+        <br>
+        <p><a href="https://wikicarpedia.com/car/Digital_Versions#Carcassonne_[by_Exozet_for_Windows_Phone_7]" target="_blank" rel="noopener noreferrer">Wikicarpedia</a></p>
+      </div>
+
+    <!-- «Catan Städte&Ritter» - Android (C++), 4 Programmierer, Release 2012 : Grundspiel und KI für die  Erweiterung angepasst, sowie Fortschrittskarten integriert. -->
+        <div class="project">
+        <img src="../assets/img/converted/CatanClassic.png" alt="CC">
+        <h3>Catan Städte&Ritter (Release 2012)</h3>
+        <p><b>Team:</b> 4 Programmierer</p>
+        <p><b>Beschreibung:</b> Städte und Ritter ist die nächste große Erweiterung nach Seefahrer.</p>
+        <p><b>Aufgaben:</b> Die Erweiterung in das Grundspiel einbauen. KI erweitern damit sie mit den neuen Funktionen umgehen kann. Fortschrittskarten für Spieler und AI integrieren.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">AI</div>
+            <div class="skill">Android</div>
+            <div class="skill">Firmen Engine</div>
+        </div>
+        <br>
+        <p><a href="https://play.google.com/store/apps/details?id=com.exozet.android.catan&hl=de" target="_blank" rel="noopener noreferrer">Playstore</a></p>
+      </div>
+    
+    <!-- «Tierische VIPs» - Nintendo DS, 3 Programmierer, Release 2011 : 2 von 11 Minigames, Coregameplay-Elemente,  Bau- und Questsystem sowie Tierentwicklung programmiert. -->
+        <div class="project">
+        <img src="../assets/img/converted/TierVIP.png" alt="TierVIP">
+        <h3>Tierische VIP's (Release 2011)</h3>
+        <p><b>Team:</b> 3 Programmierer</p>
+        <p><b>Beschreibung:</b> Ein RPG bei dem der Spieler eine Tierpension für berühmte Tierhalter eröffnet.</p>
+        <p><b>Aufgaben:</b> Entwickeln eines Questsystems und einer Mechanik zum Bauen von Erweiterungen. Leveling von Tieren programiert sowie 2 Minigames für Tiere.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Nintendo DS</div>
+            <div class="skill">BitEngine</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=JPLoZiJRsdk" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+
+    <!-- «Emily the Strange» - Nintendo DS, 3 Programmierer, Release 2010 : Alle 65 Rätseln eingebaut und in Teilen selbst die Konzeption übernommen. -->
+        <div class="project">
+        <img src="../assets/img/converted/Emily.png" alt="Emily">
+        <h3>Emily the Strange (Release 2010)</h3>
+        <p><b>Team:</b> 3 Programmierer</p>
+        <p><b>Beschreibung:</b> Emily sucht ihre Katzen und muss sich vielen Rätseln stellen um sie wieder zu finden.</p>
+        <p><b>Aufgaben:</b> Alle Rätseln und Minigames implementieren und teilweise auch designen.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Nintendo DS</div>
+            <div class="skill">BitEngine</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=myHWXM759Ok" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+
+    <!-- «VIP-News» - Nintendo DS, 3 Programmierer, Release 2010 : 4 von 8 Minigames entwickelt und an Coregameplay-Elementen, wie Steuerung, Dialog- und Questsystem, mitgewirkt.  -->
+        <div class="project">
+        <img src="../assets/img/converted/VIPNews.png" alt="VIPNews">
+        <h3>VIP-News (Release 2010)</h3>
+        <p><b>Team:</b> 3 Programmierer</p>
+        <p><b>Beschreibung:</b> Ein RPG in der man eine Reporterin für ein VIP Magazin ist. </p>
+        <p><b>Aufgaben:</b> Das Dialog- und Questsystem entwickeln. Die Spieler Steuerung programmieren. 4 Minigames entwickelen. </p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Nintendo DS</div>
+            <div class="skill">BitEngine</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=G2Clw9udfes" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+
+    <!-- «My Boyfriend - Verliebt in einen Star» - Nintendo DS, 4 Programmierer, Release 2009 : 5 von 10 Minigames,  Coregameplay und Questsystem entwickelt. -->
+        <div class="project">
+        <img src="../assets/img/converted/Boyfriend.png" alt="Boyfriend">
+        <h3>My Boyfriend - Verliebt in einen Star (Release 2009)</h3>
+        <p><b>Team:</b> 4 Programmierer</p>
+        <p><b>Beschreibung:</b> Ein RPG in dem man eine Schülerin spielt</p>
+        <p><b>Aufgaben:</b> Questsystem und Spiel Architektur entwickeln. 5 Minigames programmieren.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Nintendo DS</div>
+            <div class="skill">BitEngine</div>
+        </div>
+        <!-- <br>
+        <p><a href="https://www.youtube.com/watch?v=N1yw4xI3lQ0">youtube</a></p> -->
+      </div>
+
+    <!-- «Catan» - Nintendo DS, 4 Programmierer, Release 2009: Implementierung von Regeln, KI-Anpassungen und Unterstützung bei Netzwerkintegration. -->
+    <div class="project">
+        <img src="../assets/img/converted/CatanDS.png" alt="CatanDS">
+        <h3>Catan DS (Release 2009)</h3>
+        <p><b>Team:</b> 3 Programmierer</p>
+        <p><b>Beschreibung:</b> Catan für den DS. Codebasis wurde von Java in C++ mit einem Konverter grob Übertragen.</p>
+        <p><b>Aufgaben:</b> Implementieren von Spielregeln. Anpassungen an der AI vornehmen und beheben von Memory Leaks. Unterstützen bei der Multiplayer entwicklung.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Nintendo DS-SDK</div>
+            <div class="skill">AI</div>
+            <div class="skill">Netzwerk</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=75HV4lyTRVw" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+
+      <!-- Dawn of Bugs - PC Vision Engine, 2 Programmierer, Games Academy Studentenprojekt, RTS: Kampf- und Levelsystem, Formationen- und Shader-Integration. -->
+      <div class="project">
+        <img src="../assets/img/converted/DawnOfBugs.png" alt="DawnOfBugs">
+        <h3>Dawn of Bugs (2008)</h3>
+        <p><b>Team:</b> 2 Programmierer</p>
+        <p><b>Beschreibung:</b> RTS im postapokalytischem Setting. Das Abschlußprojekt in der Games Academy.</p>
+        <p><b>Aufgaben:</b> Das Kampf- und Levelsystem für die Einheiten implementieren. Leichte einheiten Formation darstellen. Shader und Visuelle Effekte anzeigen.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Trinigy Vision Engine</div>
+            <div class="skill">Netzwerk</div>
+        </div>
+        <br>
+        <p><a href="https://www.youtube.com/watch?v=IlzzZr2Ecso" target="_blank" rel="noopener noreferrer">youtube</a></p>
+      </div>
+    </div>
+
+    <br>
+    <h3 id="toolProject">Anwendungen & Tools  <a href="#top">🔝</a></h3>
+    <div class="projects">      
+      <div class="project">
+        <img src="../assets/img/converted/TextParser.png" alt="TextTool">
+        <h3>Text Analyser (2025)</h3>
+        <p><b>Beschreibung:</b> Bibliothek für grundlegende Textanalysen. 1 Wochen Abgabeprojekt.</p>
+        <p><b>Aufgaben:</b> Wiederverwendbare Bibliothek entwerfen mit folgenden Funktionalitäten: Wörter/Sätze zählen, Häufigkeit von Worten und Wortkombination zählen, ReadabilityScore. Tests erzeugen die die Robostheit der Bibliothek erhöhen.</p>
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">Unittests</div>
+            <div class="skill">Google Tests</div>
+            <div class="skill">DoxyGen</div>
+        </div>
+        <br>
+        <p><a href="https://github.com/AlexStillerr/Text-analyser">GitHub Repo</a></p>
+      </div>
+
+      <div class="project">
+        <img src="../assets/img/converted/finance.png" alt="FinanzTool">
+        <h3>Finanzen App (2025)</h3>
+        <p><b>Beschreibung:</b> Ein Tool was die Ausgaben eines Monats erfassen kann und in Kategorien speichert.</p>
+        <p><b>Aufgaben:</b> Verknüpfung von einem Google Sheet, in meinem Drive, und einer Android app. Stabile Kommunication zwischen App und Sheet. PixelArt erstellen. </p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">UI Builder</div>
+            <div class="skill">Google Sheet</div>
+            <div class="skill">Pixelart</div>
+        </div>
+        <br>
+        <!-- <p><a href="#">GitHub Repo</a></p> -->
+      </div>
+      <div class="project">
+        <img src="../assets/img/converted/MatchFour.png" alt="MatchFour">
+        <h3>Vier Gewinnt AI (2025)</h3>
+        <p><b>Beschreibung:</b> Kombination von C# mit Python. Eine selbstlernende AI für Vier Gewinnt.</p>
+        <p><b>Aufgaben:</b> C# Umgebung sendet Daten über ein HttpClient an Python Server. Python nutzt Reinforcement Learning um die Daten zu verarbeiten. Python sendet eine Action an C# zurück.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">WPF</div>
+            <div class="skill">HttpClient</div>
+            <div class="skill">Python</div>
+            <div class="skill">AI ML</div>
+        </div>
+        <br>
+        <p><a href="https://github.com/AlexStillerr/CSharp/tree/main/MatchFour" target="_blank" rel="noopener noreferrer">GitHub Repo C#</a></p>
+        <p><a href="https://github.com/AlexStillerr/PythonSteps/tree/main/ReinforcementLearning" target="_blank" rel="noopener noreferrer">GitHub Repo Python</a></p>
+      </div>
+
+      <div class="project">
+        <img src="../assets/img/converted/LernQuiz.png" alt="LernQuiz">
+        <h3>Lern Quiz (2025)</h3>
+        <p><b>Beschreibung:</b> Ein Quiz zum lernen vom Programmier Themen. Die Fragen wurden von ChatGPT erstellt.</p>
+        <p><b>Aufgaben:</b> Den Umgang mit Windows Form lernen.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Windows Form</div>
+        </div>
+        <br>
+        <p><a href="https://github.com/AlexStillerr/CSharp/tree/main/Quiz" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+      </div>
+
+      <div class="project">
+        <img src="../assets/img/converted/MessageBus.png" alt="MessageBus">
+        <h3>Message System (2024)</h3>
+        <p><b>Beschreibung:</b> Eine System was es erlaubt Events im Unity Context zu senden und zu empfangen.</p>
+        <p><b>Aufgaben:</b> Anmelden/Abmelden von Events(Klassen) an ein MessageHandler. Triggern der Events über das Interface(MessageBus). Handlen in angemeldeten Klassen Ohne Cast.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+            <div class="skill">Dependency Injection</div>
+        </div>
+        <br>
+        <p><a href="https://github.com/AlexStillerr/Alex-Game-Logic/tree/main/MessageSystem" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+      </div>
+            <!-- «» - PC (C++), Release 2014 : Cocos2dx Lernquiz für Medizin-Studenten. Eigenständige Entwicklung des Spiels und Teile des Designs.  -->
+      <div class="project">
+        <img src="../assets/img/converted/SpeedHisto.png" alt="SpeedHisto">
+        <h3>Speed Histologie (2014)</h3>
+        <p><b>Team:</b> 1 Programmierer</p>
+        <p><b>Beschreibung:</b> Lernquiz für Medizin-Studenten. Im Auftrag des Universität Marburg.</p>
+        <p><b>Aufgaben:</b> 5 Frage Kategorien designen und programmieren. Schwierigkeitsstufen und individuellen Modus einbauen. Fragen von aussen einlesen. Einen Installer erstellen.</p>
+        <div class="skills">
+          <div class="skill">C++</div>
+          <div class="skill">Cocos2dx</div>
+          <div class="skill">Cocos Builder</div>
+        </div>
+      </div>
+      
+      <!-- «Tivi-Train» - Unity (C#), 2 Programmierer, Nicht released : Frauenhofer Forschungsprojekt. Daten  einer  Sensormatte visuell dargestellt, inklusive Menüintegration. -->
+      <div class="project">
+        <img src="../assets/img/converted/tivitrain.png" alt="Tivi-Train">
+        <h3>Tivi-Train (2012)</h3>
+        <p><b>Team:</b> 2 Programmierer</p>
+        <p><b>Beschreibung:</b> Patienten sollen zuhause Übungen auf einer Matte machen und der Arzt kann bei sich die Auswertung sehen. Frauenhofer Forschungsprojekt.</p>
+        <p><b>Aufgaben:</b> Daten einer Sensormatte visuell dargestellt. Menüführung implementieren.</p>
+        <div class="skills">
+            <div class="skill">C#</div>
+            <div class="skill">Unity</div>
+        </div>
+      </div>
+    </div>
+    
+    <br><br>
+    <h3 id="ownProject">Eigene Spiele <a href="#">🔝</a></h3>
     <div class="projects">
       <div class="project">
         <img src="../assets/img/converted/FastEscapeStart.png" alt="Fast Escape">
         <h3>Fast Escape (2025)</h3>
-        <p><b>Beschreibung:</b> Lernen von Python und PyGame mit einem Würfelspiel</p>
-        <p><b>Aufgaben:</b> 5 Tage Game Jam mit dem Thema "Life - Die - Repeat"</p>
+        <p><b>Beschreibung:</b> 5 Tage Game Jam mit dem Thema "Life - Die - Repeat". Der Spieler muss aus einem Dungeon was sich alle x Sekunden fast vollständig resetet.</p>
+        <p><b>Aufgaben:</b> Design entwerfen was den Spieler 10 Minuten beschäftigt. Lock-Key system  programmieren </p>
         <div class="skills">
             <div class="skill">C#</div>
             <div class="skill">Unity</div>
@@ -69,10 +471,11 @@ lightbox.addEventListener("click", () => {
         <img src="../assets/img/converted/Kniffel.png" alt="Kniffel">
         <h3>Kniffel (2025)</h3>
         <p><b>Beschreibung:</b> Lernen von Python und PyGame mit einem Würfelspiel</p>
-        <p><b>Aufgaben:</b> </p>
+        <p><b>Aufgaben:</b> Kniffel regeln mit RegEx implementieren. Animationen kreieren</p>
         <div class="skills">
             <div class="skill">Python</div>
             <div class="skill">PyGame</div>
+            <div class="skill">RegEx</div>
         </div>
         <br>
         <p><a href="https://github.com/AlexStillerr/PythonSteps/tree/main/Kniffel" target="_blank" rel="noopener noreferrer">GitHub</a></p>
@@ -82,7 +485,7 @@ lightbox.addEventListener("click", () => {
         <img src="../assets/img/converted/MaulwurfParty.png" alt="Maulwurfparty">
         <h3>Maulwurfparty (2025)</h3>
         <p><b>Beschreibung:</b> Ein Maulwurf soll Tunnel zum Futter graben ohne von Schafen erwischt zu werden.</p>
-        <p><b>Aufgaben:</b> Portfolio Project und um es mit der Familie zu teilen. Ziel war eine Misschung aus Knobel und Merkspiel</p>
+        <p><b>Aufgaben:</b> Spieldesign entwerfen aufgrund einer Idee aus der Familie. Ui und Level Fortschritt implementeiren. Ziel ist eine Misschung aus Knobel und Merkspiel zu programmieren.</p>
         <div class="skills">
             <div class="skill">C#</div>
             <div class="skill">Unity</div>
@@ -107,323 +510,6 @@ lightbox.addEventListener("click", () => {
         <p><a href="#">Link</a></p>
       </div> -->
     </div>
-    <br>
-    <h3>💼 Professional Projects</h3>
-    <div class="projects">
-
-      <!-- «Destruction Dudes» - Unity (C#), 5 Programmierer, Internes Project: KI entworfen und implementierung, Ingame UI, Game-Logic, Message System. -->
-      <div class="project">
-        <img src="../assets/img/converted/DestructionDudes.png" alt="DestructionDudes">
-        <h3>Destruction Dudes</h3>
-        <p><b>Team:</b> 5 Programmierer</p>
-        <p><b>Beschreibung:</b> Ein Bomberman Clon in 3d mit der Möglichkeit Bomben zu werfen.</p>
-        <p><b>Aufgaben:</b> Eine AI entwerfen die herrausfordernd ist. Game Logic und Message System entworfen.</p>
-        <div class="skills">
-            <div class="skill">C#</div>
-            <div class="skill">Unity</div>
-            <div class="skill">AI</div>
-            <div class="skill">UI</div>
-        </div>
-        <!-- <br>
-        <p><a href="#">Link</a></p> -->
-      </div>
-
-      <!-- «Dofus» - Unity (C#), ca 20 Programmierer, ca Release 2022: Portierung von Flash zu Unity, Tutorial system, Ingame UI. -->
-      <div class="project">
-        <img src="../assets/img/converted/Dofus.png" alt="Dofus">
-        <h3>Dofus (Release 2022)</h3>
-        <p><b>Team:</b> ca 20 Programmierer</p>
-        <p><b>Beschreibung:</b> Ein 2D mmorgp was von Flash zu Unity portiert wurde</p>
-        <p><b>Aufgaben:</b> Die konvertierung/neu schreiben vom Tutorial, Hinweis/Item Ui Systems und Player Profil.</p>
-        <div class="skills">
-            <div class="skill">C#</div>
-            <div class="skill">Unity</div>
-            <div class="skill">UI Builder</div>
-        </div>
-        <br>
-        <p><a href="https://www.dofus.com/en/mmorpg/discover" target="_blank" rel="noopener noreferrer">Link zum Spiel</a></p>
-      </div>
-
-    <!-- «Blood Rage» - Unity (C#), 3 Programmierer, Release 2020: KI entworfen und implementierung, Unity-Tests, Tutorial system, Ingame UI, Game-Logic. -->
-    <div class="project">
-      <img src="../assets/img/converted/BloodRage.png" alt="BloodRage">
-      <h3>Blood Rage (Release 2020)</h3>
-      <p><b>Team:</b> 3 Programmierer</p>
-      <p><b>Beschreibung:</b> Das Brettspiel Blood Rage </p>
-      <p><b>Aufgaben:</b> Die AI designen und unterschiedliche Rollen implementieren. Karten/Spiel Logic eingebauen und das Tutorial.</p>
-      <div class="skills">
-          <div class="skill">C#</div>
-          <div class="skill">Unity</div>
-          <div class="skill">AI</div>
-          <div class="skill">Unittests</div>
-          <div class="skill">UI</div>
-      </div>
-      <br>
-      <p><a href="https://store.steampowered.com/app/1015930/Blood_Rage_Digital_Edition/" target="_blank" rel="noopener noreferrer">Steam</a></p>
-    </div>
-
-    <!-- «Catan Switch» - Unity (C#, JavaScript, Nintendo Switch), 3 Programmierer, Release 2019 : Portierung von Catan Universe auf Switch, KI erweitert, Nintendo Lotcheck, Multiplayer verbessert. Lead Entwickler -->
-    <div class="project">
-      <img src="../assets/img/converted/CUSwitch.png" alt="CatanSwitch">
-      <h3>Catan Switch (Release 2019)</h3>
-      <p><b>Team:</b> 3 Programmierer</p>
-      <p><b>Beschreibung:</b> Portierung von Catan Universe auf die Nintendo Switch.</p>
-      <p><b>Aufgaben:</b> Multiplayer an die Nintendo vorgaben anpassen. Das Spiel Nintendo Lotcheck Konform gestalten. AI und Speicherverhalten anpassen.</p>
-      <div class="skills">
-          <div class="skill">C#</div>
-          <div class="skill">Unity</div>
-          <div class="skill">Lead Entwickler</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">AI</div>
-          <div class="skill">Ui</div>
-      </div>
-      <br>
-      <p><a href="https://www.youtube.com/watch?v=0_JvJf2MZ6M" target="_blank" rel="noopener noreferrer">youtube</a></p>
-    </div>
-    
-    <!-- «Catan Universe» - Unity (C#, JavaScript), 4-7 Programmierer, Release 2017 : Catan-Regel mit Erweiterungen und Coregame-Logik implementiert,  KI fürs Kartenspiel erstellt, KI für Catan erweitert, Multiplayer mit Hilfe von GameSparks aufgebaut, Ingame Ui, Unittests aufgebaut. ScrumMaster -->
-    <div class="project">
-      <img src="../assets/img/converted/CU1.png" alt="Screenshot">
-      <h3>Catan Universe (Release 2017)</h3>
-      <p><b>Team:</b> 4-7 Programmierer</p>
-      <p><b>Aufgaben:</b> Die GameLogic zu schreiben und die Catan-Regel mit Erweiterungen implementieren. 
-        Die KI fürs Kartenspiel erstellt, KI für Catan erweitert, 
-        Multiplayer mit Hilfe von GameSparks aufgebaut, Ingame Ui, Unittests aufgebaut.</p>
-      <div class="skills">
-          <div class="skill">C#</div>
-          <div class="skill">Unity</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">AI</div>
-          <div class="skill">Ui</div>
-          <div class="skill">ScrumMaster</div>
-      </div>
-      <br>
-      <p><a href="https://catanuniverse.com/" target="_blank" rel="noopener noreferrer">Webseite</a></p>
-    </div>
-    
-    <!-- «Diamond Dash» - Android (C++), 3-6 Programmierer, Letztes Update 2015 : Entwicklung mit Cocos2dx und Anbindung von Google Analytics. Controller für Ligen, Boosts und Missionen programmiert, sowie  Teile der Menüintegration entwickelt. -->
-      <div class="project">
-        <img src="../assets/img/converted/DiamondDash.png" alt="DiamondDash">
-        <h3>Diamond Dash (Letztes Update 2015)</h3>
-        <p><b>Team:</b> 3-6 Programmierer</p>
-        <p><b>Beschreibung:</b> Entwicklung mit Cocos2dx und Anbindung von Google Analytics.</p>
-        <p><b>Aufgaben:</b> Controller für Ligen, Boosts und Missionen programmiert, sowie  Teile der Menüintegration entwickelt.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Cocos2dx</div>
-            <div class="skill">Android</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=mC67st37md8" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-
-    <!-- «Jelly Splash» - Android (C++), 3-6 Programmierer, Release 2013 : Entwicklung mit Cocos2dx und Anbindung von Kakao Talk. Ingame-Programmierung von speziellen „Jellys“ und Menüintegration. -->
-        <div class="project">
-        <img src="../assets/img/converted/JellySplash.png" alt="JellySplash">
-        <h3>Jelly Splash (Release 2013)</h3>
-        <p><b>Team:</b> 3-6 Programmierer</p>
-        <p><b>Beschreibung:</b> Entwicklung mit Cocos2dx und Anbindung von Kakao Talk.</p>
-        <p><b>Aufgaben:</b> Ingame-Programmierung von speziellen „Jellys“ und Menüintegration.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Cocos2dx</div>
-            <div class="skill">Android</div>
-        </div>
-        <br>
-        <p><a href="https://apps.apple.com/us/app/jelly-splash-fun-puzzle-game/id645949180" target="_blank" rel="noopener noreferrer">Apple app store</a></p>
-      </div>
-
-    <!-- «HABA Obstgarten» - iOs (C++), 3 Programmierer, Release  2012 : Entwicklung mit Cocos2dx, Mechanik zum Pflanzen sowie Wachstum von Bäumen programmiert. -->
-        <div class="project">
-        <img src="../assets/img/converted/Haba.png" alt="Haba">
-        <h3>HABA Obstgarten (Release 2012)</h3>
-        <p><b>Team:</b> 3 Programmierer</p>
-        <p><b>Beschreibung:</b> Entwicklung mit Cocos2dx</p>
-        <p><b>Aufgaben:</b> Mechanik zum Pflanzen sowie Wachstum von Bäumen programmiert.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Cocos2dx</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=bQfZX0yhjG4" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-
-    <!-- «Carcassonne» - Windows Phone 7 (C#), 3 Programmierer, Release 2012 : KI-Implementierung, Einbindung von 3 Erweiterungen, Vorschaueditor und weitere Coregameplay-Elemente eingebaut. -->
-        <div class="project">
-        <img src="../assets/img/converted/Caracassonne.png" alt="Carcassonne">
-        <h3>Carcassonne (Release 2012)</h3>
-        <p><b>Team:</b> 3 Programmierer</p>
-        <p><b>Beschreibung:</b> </p>
-        <p><b>Aufgaben:</b> KI-Implementierung, Einbindung von 3 Erweiterungen, Vorschaueditor und weitere Coregameplay-Elemente eingebaut.</p>
-        <div class="skills">
-            <div class="skill">C#</div>
-            <div class="skill">XAML</div>
-            <div class="skill">Windows Phone</div>
-        </div>
-        <br>
-        <p><a href="https://wikicarpedia.com/car/Digital_Versions#Carcassonne_[by_Exozet_for_Windows_Phone_7]" target="_blank" rel="noopener noreferrer">Wikicarpedia</a></p>
-      </div>
-
-    <!-- «Tivi-Train» - Unity (C#), 2 Programmierer, Nicht released : Frauenhofer Forschungsprojekt. Daten  einer  Sensormatte visuell dargestellt, inklusive Menüintegration. -->
-        <div class="project">
-        <img src="../assets/img/NoImage.png" alt="Tivi-Train">
-        <h3>Tivi-Train (Release ----)</h3>
-        <p><b>Team:</b> 2 Programmierer</p>
-        <p><b>Beschreibung:</b> Frauenhofer Forschungsprojekt.</p>
-        <p><b>Aufgaben:</b> Daten  einer  Sensormatte visuell dargestellt, inklusive Menüintegration.</p>
-        <div class="skills">
-            <div class="skill">C#</div>
-            <div class="skill">Unity</div>
-        </div>
-        <!-- <br>
-        <p><a href="https://www.dofus.com/en/mmorpg/discover">Link zum Spiel</a></p> -->
-      </div>
-
-    <!-- «Christiane Stengers Gedächtnis-Coach» - Nintendo DS  (C++), 1 Programmierer, Release 2013 : Eigenständige Programmierung des gesamten Spiels. -->
-        <div class="project">
-        <img src="../assets/img/converted/Stenger1.png" alt="Gedächtnis-Coach">
-        <h3>Christiane Stengers Gedächtnis-Coach (Release 2013)</h3>
-        <p><b>Team:</b> 1 Programmierer</p>
-        <p><b>Beschreibung:</b> </p>
-        <p><b>Aufgaben:</b> Eigenständige Programmierung des gesamten Spiels.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Nintendo DS</div>
-            <div class="skill">BitEngine</div>
-            <div class="skill">Lotcheck</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=Or26AhbQUKI" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-
-    <!-- «Catan Städte&Ritter» - Android (C++), 4 Programmierer, Release 2012 : Grundspiel und KI für die  Erweiterung angepasst, sowie Fortschrittskarten integriert. -->
-        <div class="project">
-        <img src="../assets/img/converted/CatanClassic.png" alt="CC">
-        <h3>Catan Städte&Ritter (Release 2012)</h3>
-        <p><b>Team:</b> 4 Programmierer</p>
-        <p><b>Beschreibung:</b> </p>
-        <p><b>Aufgaben:</b> Grundspiel und KI für die  Erweiterung angepasst, sowie Fortschrittskarten integriert.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Android</div>
-            <div class="skill">Firmen Engine</div>
-        </div>
-        <br>
-        <p><a href="https://play.google.com/store/apps/details?id=com.exozet.android.catan&hl=de" target="_blank" rel="noopener noreferrer">Playstore</a></p>
-      </div>
-    
-    <!-- «Tierische VIPs» - Nintendo DS, 3 Programmierer, Release 2011 : 2 von 11 Minigames, Coregameplay-Elemente,  Bau- und Questsystem sowie Tierentwicklung programmiert. -->
-        <div class="project">
-        <img src="../assets/img/converted/TierVIP.png" alt="TierVIP">
-        <h3>Tierische VIP's (Release 2011)</h3>
-        <p><b>Team:</b> 3 Programmierer</p>
-        <p><b>Beschreibung:</b> </p>
-        <p><b>Aufgaben:</b> 2 von 11 Minigames, Coregameplay-Elemente,  Bau- und Questsystem sowie Tierentwicklung programmiert.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Nintendo DS</div>
-            <div class="skill">BitEngine</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=JPLoZiJRsdk" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-
-    <!-- «Emily the Strange» - Nintendo DS, 3 Programmierer, Release 2010 : Alle 65 Rätseln eingebaut und in Teilen selbst die Konzeption übernommen. -->
-        <div class="project">
-        <img src="../assets/img/converted/Emily.png" alt="Emily">
-        <h3>Emily the Strange (Release 2010)</h3>
-        <p><b>Team:</b> 3 Programmierer</p>
-        <p><b>Beschreibung:</b> Emily sucht ihre Katzen und muss sich vielen Rätseln stellen.</p>
-        <p><b>Aufgaben:</b> Alle Rätseln/Minigames implementieren und teils auch designen.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Nintendo DS</div>
-            <div class="skill">BitEngine</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=myHWXM759Ok" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-
-    <!-- «VIP-News» - Nintendo DS, 3 Programmierer, Release 2010 : 4 von 8 Minigames entwickelt und an Coregameplay-Elementen, wie Steuerung, Dialog- und Questsystem, mitgewirkt.  -->
-        <div class="project">
-        <img src="../assets/img/converted/VIPNews.png" alt="VIPNews">
-        <h3>VIP-News (Release 2010)</h3>
-        <p><b>Team:</b> 3 Programmierer</p>
-        <p><b>Beschreibung:</b> </p>
-        <p><b>Aufgaben:</b> 4 von 8 Minigames entwickelt und an Coregameplay-Elementen, wie Steuerung, Dialog- und Questsystem, mitgewirkt.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Nintendo DS</div>
-            <div class="skill">BitEngine</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=G2Clw9udfes" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-
-    <!-- «My Boyfriend - Verliebt in einen Star» - Nintendo DS, 4 Programmierer, Release 2009 : 5 von 10 Minigames,  Coregameplay und Questsystem entwickelt. -->
-        <div class="project">
-        <img src="../assets/img/converted/Boyfriend.png" alt="Boyfriend">
-        <h3>My Boyfriend - Verliebt in einen Star (Release 2009)</h3>
-        <p><b>Team:</b> 4 Programmierer</p>
-        <p><b>Beschreibung:</b> </p>
-        <p><b>Aufgaben:</b> 5 von 10 Minigames,  Coregameplay und Questsystem entwickelt.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Nintendo DS</div>
-            <div class="skill">BitEngine</div>
-        </div>
-        <!-- <br>
-        <p><a href="https://www.youtube.com/watch?v=N1yw4xI3lQ0">youtube</a></p> -->
-      </div>
-
-    <!-- «Catan» - Nintendo DS, 4 Programmierer, Release 2009: Implementierung von Regeln, KI-Anpassungen und Unterstützung bei Netzwerkintegration. -->
-    <div class="project">
-        <img src="../assets/img/converted/CatanDS.png" alt="CatanDS">
-        <h3>Catan DS (Release 2009)</h3>
-        <p><b>Team:</b> 3 Programmierer</p>
-        <p><b>Beschreibung:</b> </p>
-        <p><b>Aufgaben:</b> Implementierung von Regeln, KI-Anpassungen und Unterstützung bei Netzwerkintegration.</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Nintendo DS-SDK</div>
-            <div class="skill">UI Builder</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=75HV4lyTRVw" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-    </div>
-    <h3>🛠️ Sonstige Projekte?</h3>
-    <div class="projects">
-      <!-- «» - PC (C++), Release 2014 : Cocos2dx Lernquiz für Medizin-Studenten. Eigenständige Entwicklung des Spiels und Teile des Designs.  -->
-      <div class="project">
-        <img src="../assets/img/converted/SpeedHisto.png" alt="SpeedHisto">
-        <h3>Speed Histologie (2014)</h3>
-        <p><b>Team:</b> 1 Programmierer</p>
-        <p><b>Beschreibung:</b> Lernquiz für Medizin-Studenten. Im Auftrag des Universität Marburg.</p>
-        <p><b>Aufgaben:</b> Eigenständige Entwicklung des Spiels und Teile des Designs. </p>
-        <div class="skills">
-          <div class="skill">C++</div>
-          <div class="skill">Cocos2dx</div>
-        </div>
-        <!-- <br>
-        <p><a href="#">youtube</a></p> -->
-      </div>
-      
-      <!-- Dawn of Bugs - PC Vision Engine, 2 Programmierer, Games Academy Studentenprojekt, RTS: Kampf- und Levelsystem, Formationen- und Shader-Integration. -->
-      <div class="project">
-        <img src="../assets/img/converted/DawnOfBugs.png" alt="DawnOfBugs">
-        <h3>Dawn of Bugs (2008)</h3>
-        <p><b>Team:</b> 2 Programmierer</p>
-        <p><b>Beschreibung:</b> Games Academy Studentenprojekt</p>
-        <p><b>Aufgaben:</b> RTS: Kampf- und Levelsystem, Formationen- und Shader-Integration</p>
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">Trinigy Vision Engine</div>
-        </div>
-        <br>
-        <p><a href="https://www.youtube.com/watch?v=IlzzZr2Ecso" target="_blank" rel="noopener noreferrer">youtube</a></p>
-      </div>
-    </div>
   </section>
 
   <!-- Kontakt -->
@@ -432,9 +518,12 @@ lightbox.addEventListener("click", () => {
     <div class="contact">
       <a href="https://www.linkedin.com/in/alexander-stiller-9787885/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://www.xing.com/profile/Alex_Stiller3/" target="_blank" rel="noopener noreferrer">Xing</a>
+      <a href="https://www.codingame.com/profile/e77b542d2dfb7812aeb8bb8e2a1e42cb619234" target="_blank" rel="noopener noreferrer">Codinggame</a>
     </div>
   </section>
 
+  <br>
+  <br>
   <footer>
     &copy; 2026 Alexander Stiller
   </footer>

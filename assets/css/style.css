@@ -93,6 +93,7 @@ h2 { color: #222; border-bottom: 2px solid #0d6e32; display: inline-block; paddi
 .project img {
     max-width: 100%;
     border-radius: 4px;
+    cursor: zoom-in;
 }
 .project h3 { margin-top: 10px; margin-bottom: 5px; }
 .project p { margin: 0; font-size: 0.95em; }
